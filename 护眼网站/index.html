@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="sliderxv/css/sliderx.css">
+  <link rel="stylesheet" href="css/nav1.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <title>护眼网</title>
+  <style>
+    /* 内容区main部分 */
+    .leftmain {
+      margin-top: 50px;
+
+    }
+
+    .leftmain img {
+      width: 100%;
+
+    }
+
+
+    .jinling {
+      padding-left: 5%;
+      float: left;
+    }
+
+    .jinling img {
+      width: 130px;
+    }
+
+
+    .hello {
+      float: left;
+      width: 60%;
+    }
+
+    .hello p {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #000;
+      font-size: 30px;
+
+    }
+
+    .hello h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #wrapper {
+      display: inline-block;
+      position: relative;
+      padding: 0 20px;
+      border: 2px solid #98C1CC;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0px 2px 15px 0px #98C1CC;
+    }
+
+    #triangle {
+      /*left: 50%;与margin-left: 15px;是为了实现三角形的水平居中*/
+      position: absolute;
+      left: -31px;
+      top: 6px;
+      /* margin-left: 15px; */
+      width: 0;
+      height: 0;
+      border-width: 15px;
+      border-style: solid;
+      border-color: transparent #98C1CC transparent transparent;
+    }
+
+    #triangle div {
+      position: absolute;
+      left: -12px;
+      top: -15px;
+      width: 0;
+      height: 0;
+      border-width: 15px;
+      border-style: solid;
+      border-color: transparent #efefef transparent transparent;
+    }
+
+    .rightmain-bottom {
+      padding-top: 10px;
+      padding-right: 10%;
+
+    }
+
+    .rightmain-bottom .rightmain-bottom-l {
+      background-color: #BBF7F4;
+      float: left;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .rightmain-bottom .rightmain-bottom-r {
+      padding-top: 20px;
+      float: right;
+      width: 35%;
+    }
+
+    .rightmain-bottom .rightmain-bottom-r a:nth-child(1) div {
+      height: 80px;
+      background-color: #fff;
+      margin-bottom: 50px;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: 5px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+      transform: rotate(-6deg);
+      transition: all 0.5s;
+      text-align: center;
+    }
+
+    .rightmain-bottom .rightmain-bottom-r a:nth-child(2) div {
+      height: 80px;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: 5px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+      transform: rotate(8deg);
+      transition: all 0.5s;
+      text-align: center;
+    }
+
+    .rightmain-bottom .rightmain-bottom-r a:nth-child(1) div:hover,
+    .rightmain-bottom .rightmain-bottom-r a:nth-child(2) div:hover {
+      transform: rotate(0);
+
+    }
+
+    .box {
+      background-size: 100% 100% !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 头部导航栏 -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand" href="#"><img src="images/logo.png"></div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="firstpage"><a href="index.html">首页</a>
+          </li>
+          <li><a href="video.html">眼保健操</a>
+          </li>
+          <li><a href="ceshi.html">测视力</a></li>
+          <li><a href="tips.html">护眼小知识</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="main">
+    <div class="container">
+      <!-- 护眼小贴士轮播图 -->
+      <div class="col-md-6">
+        <div class="leftmain">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/1.3.jpg" alt="">
+                <div class="carousel-caption">
+
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/1.2.jpg" alt="...">
+                <div class="carousel-caption">
+                  <strong style="font-size: 15px;">在现代的社会环境中，保护眼睛显得十分重要！</strong>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/1.1.jpg" alt="...">
+                <div class="carousel-caption">
+                  <strong style="font-size: 15px;"> 儿童，青少年都应该加强对眼睛的保护</strong>
+                </div>
+              </div>
+              ...
+            </div>
+
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 护眼操 -->
+      <div class="col-md-6">
+        <div class="rightmain">
+          <!-- 护眼操上部分 -->
+          <div class="rightmain-top clearfix">
+            <div class="jinling">
+              <a href="">
+                <img id="dog" src="images/2.2.png">
+              </a>
+            </div>
+            <div class="hello">
+              <p>123</p>
+              <div id="wrapper">
+                <div id="triangle">
+                  <div></div>
+                </div>
+                <div>
+                  <h2>123</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 护眼操下部分 -->
+          <div class="rightmain-bottom ">
+            <div class="rightmain-bottom-l"><img src="images/2.1.fw.png" alt=""></div>
+            <div class="rightmain-bottom-r">
+              <a href="video.html">
+                <div>
+                  <h3 class="glyphicon glyphicon-facetime-video"> 护眼视频</h3>
+                </div>
+              </a>
+              <a href="ceshi.html">
+                <div>
+                  <h3 class=" glyphicon glyphicon-eye-open"> 测视力</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- 小知识区 -->
+  <div class="news">
+    <!-- 横向轮播图  -->
+    <div class="control-box news-roll hidden-ms hidden-xs hidden-md">
+      <ul>
+        <li class="prev">
+          <img src="sliderxv//images/left_02.png" alt="prev">
+        </li>
+        <li class="next">
+          <img src="sliderxv/images/right_02.png" alt="next">
+        </li>
+      </ul>
+      <div class="bigbox">
+        <div id="switcher">
+          <div class="content_1">
+            <div class="box" style="background-image: url(images/3.1.jfif);">
+              <div class="shadow">
+                <a href="article1.html">最好的护眼方法，都是免费的</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(images/3.2.jfif);">
+              <div class="shadow">
+                <a href="article2.html">按摩、眼贴、防蓝光……哪些护眼方法最靠谱？</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(images/3.3.jfif);">
+              <div class="shadow">
+                <a href="article3.html">防止用眼过度，5个护眼技巧，收藏起来</a>
+              </div>
+            </div>
+            <div class="box" style="background-image: url(images/3.4.jfif);">
+              <div class="shadow">
+                <a href="#">已证实：这5个方法，是护眼最有效的！</a>
+
+              </div>
+            </div>
+            <div class="content_2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  //   定时器:
+  // 9-11上午好
+  // 11-1做个护眼操让眼睛休息一会
+  // 1-5下午好
+  // 5-7做个护眼操让眼睛休息一会
+  // 7-10晚上好
+  // 10-6早睡早起，保护眼睛
+  var st = document.querySelector(".hello h2");
+  var nt = document.querySelector(".hello p");
+  var dog = document.querySelector("#dog");
+  function showTime() {
+    dt = new Date();
+    var hour = extra(dt.getHours());
+    var minute = extra(dt.getMinutes());
+    var second = extra(dt.getSeconds());
+    nt.innerHTML = hour + ":" + minute + ":" + second;
+  }
+  function extra(x) {
+    if (x < 10) {
+      return "0" + x;
+    }
+    else {
+      return x;
+    }
+  }
+  showTime();
+
+  setInterval("showTime()", 1000);
+  dog.onmouseover = function () {
+    nt.innerHTML = "快去做个眼保健操吧！";
+  }
+  var hour = new Date().getHours();
+  function timer() {
+    if (hour > 5 && hour <= 9)
+      st.innerHTML = "早上好";
+    else if (hour > 9 && hour <= 11) {
+      st.innerHTML = "上午好";
+    } else if (hour > 11 && hour <= 13) {
+      st.innerHTML = "做个护眼操让眼睛休息一会";
+    } else if (hour > 13 && hour <= 17) {
+      st.innerHTML = "下午好";
+    } else if (hour > 13 && hour <= 19) {
+      st.innerHTML = "做个护眼操让眼睛休息一会";
+    } else if (hour > 19 && hour <= 22) {
+      st.innerHTML = "晚上好";
+    } else if (hour > 22 && hour <= 24) {
+      st.innerHTML = "早睡早起，保护眼睛";
+    } else if (hour >= 0 && hour <= 5) {
+      st.innerHTML = "早睡早起，保护眼睛";
+    }
+  }
+  timer();
+  dog.onmouseover = function () {
+    st.innerHTML = "快去做个眼保健操吧！";
+  }
+  dog.onmouseout = function () {
+    timer();
+  }
+</script>
+<script type="text/javascript" src="sliderxv/js/sliderx.js"></script>
+
+</html>

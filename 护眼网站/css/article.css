@@ -1,0 +1,182 @@
+ /* main内容区 */
+        .leftmain {
+            margin-top: 50px;
+
+        }
+
+        .leftmain img {
+            width: 100%;
+
+        }
+
+
+        .jinling {
+            padding-left: 5%;
+            float: left;
+        }
+
+        .jinling img {
+            width: 130px;
+        }
+
+
+        .hello {
+            float: left;
+            width: 60%;
+        }
+
+        .hello p {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #000;
+            font-size: 30px;
+
+        }
+
+        .hello h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #wrapper {
+            display: inline-block;
+            position: relative;
+            padding: 0 20px;
+            border: 2px solid #98C1CC;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0px 2px 15px 0px #98C1CC;
+        }
+
+        #triangle {
+            /*left: 50%;与margin-left: 15px;是为了实现三角形的水平居中*/
+            position: absolute;
+            left: -31px;
+            top: 6px;
+            /* margin-left: 15px; */
+            width: 0;
+            height: 0;
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent #98C1CC transparent transparent;
+        }
+
+        #triangle div {
+            position: absolute;
+            left: -12px;
+            top: -15px;
+            width: 0;
+            height: 0;
+            border-width: 15px;
+            border-style: solid;
+            border-color: transparent #efefef transparent transparent;
+        }
+
+        .rightmain-bottom {
+            padding-top: 10px;
+            padding-right: 10%;
+
+        }
+
+        .rightmain-bottom .rightmain-bottom-l {
+            background-color: #BBF7F4;
+            float: left;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .rightmain-bottom .rightmain-bottom-r {
+            padding-top: 20px;
+            float: right;
+            width: 35%;
+        }
+
+        .rightmain-bottom .rightmain-bottom-r a:nth-child(1) div {
+            height: 80px;
+            background-color: #fff;
+            margin-bottom: 50px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+            transform: rotate(-6deg);
+            transition: all 0.5s;
+            text-align: center;
+        }
+
+        .rightmain-bottom .rightmain-bottom-r a:nth-child(2) div {
+            height: 80px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, .4);
+            transform: rotate(8deg);
+            transition: all 0.5s;
+            text-align: center;
+        }
+
+        .rightmain-bottom .rightmain-bottom-r a:nth-child(1) div:hover,
+        .rightmain-bottom .rightmain-bottom-r a:nth-child(2) div:hover {
+            transform: rotate(0);
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .tips-main-top {
+            width: 100%;
+        }
+
+        .tips-main-top li {
+            list-style: none;
+            float: left;
+            padding: 10px 20px;
+            border-right: 1px solid rgba(0, 0, 0, .2);
+        }
+        .tips-main-top li:first-child {
+            float: right;
+            border-right: 0;
+        }
+
+        .tips-main-top li:last-child {
+            border-right: 0;
+        }
+
+        .tips-main-top li img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .tips-main-top li {
+            font-size: 15px;
+        }
+
+        .tips-main-bottom {
+            background-color: #fff;
+            padding: 10px 10px 90px;
+            border-top: 1px solid rgba(0, 0, 0, .2);
+            box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, .2);
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+        }
+        .tips-main-bottom .top {
+            padding-top: 30px;
+            color: #222;
+            font-size: 40px;
+            font-weight: 800;
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+        }
+        .tips-main-bottom .bottom {
+            color: #333;
+            padding-top: 20px;
+            width: 100%;
+            font-size:20px;
+        }
+       

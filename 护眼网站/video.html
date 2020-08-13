@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+          <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="video-swiper/css/normalize.css" />
+  <!--CSS RESET-->
+  <link rel="stylesheet" href="video-swiper/dist/css/ckin.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="sliderxv/css/sliderx.css">
+  <link rel="stylesheet" href="css/nav1.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    .model1 {
+      background: url(images/护眼1.jpg);
+    }
+
+    .model2 {
+      background: url(images/护眼2.jpg);
+    }
+
+    .model3 {
+      background: url(images/护眼3.jpg);
+    }
+
+    .model4 {
+      background: url(images/护眼4.jpg) 0 -100px !important;
+    }
+
+    .bg {
+      position: relative;
+      width: 75%;
+      margin: 0 auto;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 -50px;
+    }
+
+    .bg::after {
+      content: "";
+      display: block;
+      /*这里的padding =  height / width*/
+      padding: 25%;
+    }
+
+    .bg div {
+      width: 31%;
+      position: absolute;
+      top: 38%;
+      left: 6%;
+    }
+
+    .bg:last-child div {
+      top: 4%;
+      left: 37%;
+    }
+
+    .bg div p {
+      font-size: 17px;
+      color: #030303;
+      line-height: 29px;
+    }
+
+    .video-top {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    .backtop {
+      position: fixed;
+      top: 50%;
+      left: 90%;
+      cursor: pointer;
+      display: none;
+    }
+
+    .backtop img {
+      width: 55px;
+      height: 55px;
+    }
+  </style>
+  <title>眼保健操</title>
+</head>
+
+<body>
+  <!-- 头部导航栏 -->
+  <div class="backtop"><img src="images/回到顶部.png" alt=""></div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand" href="#"><img src="images/logo.png"></div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="firstpage"><a href="index.html">首页</a>
+          </li>
+          <li><a href="video.html">眼保健操</a>
+          </li>
+          <li><a href="ceshi.html">测视力</a></li>
+          <li><a href="tips.html">护眼小知识</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="video-main container-fluid">
+    <div class="video-top">
+      <section class="demo-section demo-section--light" id="demo">
+        <video poster="video-swiper/ckin.jpg" src="video-swiper/ckin.3gp" data-ckin="default" data-overlay="1"
+          data-title="---下拉<br>眼保健操教程"></video>
+      </section>
+    </div>
+    <!-- 第一节揉天应穴（攒竹下三分）
+以左右大拇指罗纹面接左右眉头下面的上眶角处。其他四指散开弯曲如弓状，支在前额上，按揉面不要大。
+第二节挤按睛明穴
+以左手或右手大拇指按鼻根部，先向下按、然后向上挤。
+第三节按揉四白穴
+先以左右食指与中指并拢，放在靠近鼻翼两侧，大拇指支撑在下腭骨凹陷处，然后放下中指，在面颊中央按揉。注意穴位不需移动，按揉面不要太大。
+眼保健操图解2
+眼保健操图解2
+第四节按太阳穴、轮刮眼眶（太阳、攒竹、鱼腰、丝竹空、瞳子髎、承泣等）
+拳起四指，以左右大拇指罗纹面按住太阳
+穴，以左右食指第二节内侧面轮刮眼眶上下一圈，上侧从眉头开始，到眉梢为止，下面从内眼角起至外眼角止，先上后下，轮刮上下一圈。 -->
+    <div class="model1 bg">
+      <div>
+        <h2>第一节揉天应穴</h2>
+        <p>以左右大拇指罗纹面接左右眉头下面的上眶角处。其他四指散开弯曲如弓状，支在前额上，按揉面不要大。</p>
+      </div>
+    </div>
+    <div class="model2 bg">
+      <div>
+        <h2>第二节挤按睛明穴</h2>
+        <p>以左手或右手大拇指按鼻根部，先向下按、然后向上挤。</p>
+      </div>
+    </div>
+    <div class="model3 bg">
+      <div>
+        <h2>第三节按揉四白穴</h2>
+        <p>先以左右食指与中指并拢，放在靠近鼻翼两侧，大拇指支撑在下腭骨凹陷处，然后放下中指，在面颊中央按揉。注意穴位不需移动，按揉面不要太大。</p>
+      </div>
+    </div>
+    <div class="model4 bg">
+      <div>
+        <h2>第四节按太阳穴、轮刮眼眶</h2>
+        <p>拳起四指，以左右大拇指罗纹面按住太阳穴，以左右食指第二节内侧面轮刮眼眶上下一圈，上侧从眉头开始，到眉梢为止，下面从内眼角起至外眼角止，先上后下，轮刮上下一圈。</p>
+      </div>
+    </div>
+
+  </div>
+  <script src="video-swiper/dist/js/ckin.js"></script>
+  <script>
+    $(function () {
+      $(".backtop").click(
+        function () {
+          $('html,body').animate({ scrollTop: '0px' }, 'slow');
+        })
+      var min = $(".video-top").offset().top;
+      console.log(min);
+      $(window).scroll(
+        function () {
+          var s = $(window).scrollTop();
+          if (s > min) {
+            $(".backtop").fadeIn(1000);
+          } else {
+            $(".backtop").fadeOut(1000);
+          }
+        })
+    })
+      ;
+  </script>
+</body>
+
+</html>

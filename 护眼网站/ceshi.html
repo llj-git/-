@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测视力</title>
+    <style>
+        .main {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            user-select: none;
+        }
+
+        .home {
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            cursor: pointer;
+            padding: .5% .5%;
+            top: 3%;
+            left: 10%;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+            transition: all 0.5s;
+        }
+
+        .home:hover {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+            top: 2.8%
+        }
+
+        .home img {
+            position: absolute;
+            height: 50px;
+            left: 10%;
+        }
+
+        .home span {
+            position: absolute;
+            top: 28%;
+            left: 60%;
+            font-size: 20px;
+        }
+
+        .hepe {
+            text-align: center;
+            margin: 100px auto;
+        }
+
+        .ep {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .ep img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .ceshi-buttom {
+            width: 100%;
+            position: absolute;
+            bottom: 20%;
+            text-align: center;
+        }
+
+        .buttom {
+            margin: auto;
+        }
+
+        button {
+            position: relative;
+            font-size: 20px;
+            font-weight: 600;
+            width: 160px;
+            height: 67px;
+            margin: 0 32px;
+            border-radius: 15px;
+            outline: none;
+            background-color: #dfdfdf;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        button:nth-child(2) {
+            background-color: skyblue;
+        }
+
+        button::before {
+            content: "增大";
+            font-weight: 500;
+            position: absolute;
+            top: -68%;
+            left: 35%;
+            cursor: auto;
+        }
+
+        button:nth-child(2)::before {
+            content: "旋转";
+        }
+
+        button:nth-child(3)::before {
+            content: "缩小";
+        }
+
+        button:nth-child(2)::after {
+            content: "视力值";
+            font-weight: 600;
+            color: slateblue;
+            position: absolute;
+            top: 121%;
+            left: 28%;
+            cursor: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <a href="index.html">
+            <div class="home"><img src="images/首页 房屋 .png" alt=""> <span>首页</span></div>
+        </a>
+        <div class="hepe">
+            <h2>请捂住一直眼睛</h2>
+            <h2>距离屏幕0.8米后开始测量</h2>
+        </div>
+        <div class="ep"><img id="eyee" src="images/e.svg" alt=""></div>
+        <div class="ceshi-buttom"><span class="buttom"><button>1</button><button>1</button><button>1</button></span>
+        </div>
+    </div>
+</body>
+<script>
+    var king = [130, 103, 82, 65, 52, 41, 32, 26, 20, 16, 13, 10, 8, 6, 5, 4, 3];
+    var a = 0;
+    var eye = 37;
+    var buttonlist = document.querySelectorAll("button");
+    var img = document.querySelector("#eyee");
+    function roll() {
+
+        buttonlist[1].innerHTML = eye / 10;
+        buttonlist[0].innerHTML = (eye - 1) / 10;
+        buttonlist[2].innerHTML = (eye + 1) / 10;
+        if (eye == 37) {
+            buttonlist[0].style.visibility = "hidden";
+        }
+        else {
+            buttonlist[0].style.visibility = "visible";
+        }
+        if (eye == 53) {
+            buttonlist[2].style.visibility = "hidden";
+        }
+        else {
+            buttonlist[2].style.visibility = "visible";
+        }
+
+        img.style.width = king[a] + 'px';
+        img.style.height = king[a] + 'px';
+        var num = Math.round(Math.random() * 10);
+        console.log(num);
+
+        if (num <= 2.5) {
+            img.style.transform = "rotate(0deg)";
+        } else {
+            if (num <= 5) {
+                img.style.transform = "rotate(90deg)";
+            } else {
+                if (num < 7.5) {
+                    img.style.transform = "rotate(180sdeg)";
+                } else {
+                    img.style.transform = "rotate(270deg)";
+                }
+            }
+        }
+
+    }
+    buttonlist[1].onclick = function () {
+        roll();
+    }
+    buttonlist[0].onclick = function () {
+        eye--;
+        a--;
+        roll();
+    }
+    buttonlist[2].onclick = function () {
+        eye++;
+        roll();
+        a++;
+    }
+    roll();
+
+</script>
+
+</html>
